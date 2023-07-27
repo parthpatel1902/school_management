@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V.D.Galiyar</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="/sweetalert.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <style>
+      form {
+        border: solid black;
+        padding: 8px;
+        background-color: #fada9d;
+        color: black;
+      }
+      small {
+        color: white;
+        font-weight: bolder;
+      }
+      .vp1,
+      .vp2 {
+        border: solid black;
+        height: 500px;
+      }
+      .vp2 {
+        background-color: black;
+      }
+      .vp1 {
+        background-color: darkseagreen;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="image/school.png"
+                  alt="logo"
+                  height="50px"
+                  width="50px"
+                  style="background-color: aliceblue"
+              /></a>
+              <button
+                class="navbar-toggler btn1"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="background-color: aliceblue"
+              >
+                <img
+                  src="image/apps.png"
+                  alt="menu"
+                  class="text-light"
+                  height="40px"
+                  width="40px"
+                />
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-left"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="index.html"
+                      ><i class="fa fa-fw fa-home"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="course.html"
+                    >
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAn0lEQVR4nO2U3Q2DMAwG88RQTADqYIS1YBNa6BiHLCG1on8mcQEpuccvsk6xbDuXSQ6gAFpgAkbAS7aH2POKf3oPodeI5adr7pFiNGJp75pbRAfVYv9G3OwhLhb5aDFcarE15xcDFxkmq1XZIr6yjc5K/InyZ/E/xC6QLA5uNeH0R4m7r+L04HG55JDU1rn2cg3W+SnF9VI0AJV1nkmHGayvrjckGRc6AAAAAElFTkSuQmCC"
+                      />
+                      Course</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="feedback.html"
+                      ><i class="fa fa-star" aria-hidden="true"></i> Feedback</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="contact.html"
+                      ><i class="fa fa-fw fa-envelope"></i> Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="about.html"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 50 50"
+                        style="fill: #ffffff"
+                      >
+                        <path
+                          d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"
+                        ></path>
+                      </svg>
+                      About Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <center>
+            <h1
+              id="hq2"
+              class="mt-4 text-center alert alert-primary shadow-lg rounded"
+            >
+              Contact Form
+            </h1>
+          </center>
+          <br /><br />
+          <form action="" class="shadow">
+            <div class="form-group">
+              <label for="Name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="i1"
+                aria-describedby="emailHelp"
+                placeholder="Enter Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email1"
+                aria-describedby="emailHelp"
+                placeholder="Example ABc12@gmail.com"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Moblie</label>
+              <input
+                type="number"
+                class="form-control"
+                id="mb1"
+                aria-describedby="emailHelp"
+                placeholder="(+91) 9999888866"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your Moblie with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="standard">Select standard :- </label>
+              <select
+                class="form-select form-select-lg mb-3"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Standard</option>
+                <option value="Nursery">Nursery</option>
+                <option value="SKG">SKG</option>
+                <option value="JKG">JKG</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11commarce">11 Commarce</option>
+                <option value="11science">11 Science</option>
+                <option value="12commarce">12 Commarce</option>
+                <option value="12science">12 Science</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Message</label>
+              <!-- <input type="textarea" col="3" rows="3" class="form-control" id="exampleInputPassword1" placeholder="Enter Message"> -->
+              <textarea
+                rows="3"
+                cols="3"
+                class="form-control"
+                placeholder="Enter Message"
+                autocomplete="on"
+              ></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+                required
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >I follow the rules and regulation</label
+              >
+            </div>
+            <center>
+              <button
+                type="button"
+                class="btn btn-success"
+                id="su1"
+                onclick="submitForm()"
+              >
+                Submit</button
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <button type="reset" class="btn btn-success" id="su2">
+                Reset
+              </button>
+            </center>
+          </form>
+          <br /><br />
+          <div class="row">
+            <div class="col-lg-6 vp1">
+              <img
+                src="image/contact.png"
+                alt="contact"
+                class="image-fluid"
+                height="491px"
+                width="100%"
+              />
+            </div>
+            <div class="col-lg-6 vp2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14870.12026255965!2d72.92884696395153!3d21.29006162634961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be046454ae22a9b%3A0xabb598324998fd72!2sV.D.Galiyara%20High%20School!5e0!3m2!1sen!2sin!4v1672499972923!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style="border: 1"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="background-color: black" class="mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-light pt-2">
+              © 2023 Copyright:
+              <a href="https://vdgaliyaar.netlify.app/">v.d.galiyaar</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function submitForm() {
+      var x = document.getElementById('i1').value;
+      var y = document.getElementById('mb1').value;
+      let z = document.getElementById('email1').value;
+      var at_position = z.indexOf('@');
+      var dot_position = z.lastIndexOf('.');
+
+      if (x == '') {
+        swal({
+          title: 'Note',
+          text: 'Name is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      } else if (at_position < 1 || dot_position - at_position < 2) {
+        swal({
+          title: 'Correct Email',
+          text: 'Email is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      } else if (y == '') {
+        swal({
+          title: 'Note',
+          text: 'Moblie Number Is Reqiure',
+          icon: 'warning',
+          button: 'OK',
+        });
+      } else {
+        window.location.replace('loader.html');
+      }
+    }
+  </script>
+</html>

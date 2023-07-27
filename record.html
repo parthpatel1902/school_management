@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Confirm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      .cq1 {
+        color: aquamarine;
+        background-color: black;
+        text-align: center;
+        padding: 10px;
+        border: 4px inset aquamarine;
+        border-radius: 10px;
+        box-shadow: 3px 2px 6px 6px grey;
+      }
+      .main {
+        color: aquamarine;
+        background-color: white;
+        padding: 10px;
+        border: 4px inset aquamarine;
+        border-radius: 10px;
+        box-shadow: 3px 2px 6px 6px grey;
+      }
+      body {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h3 class="cq1">
+          Check Your Input Detail, If Changes to the Input Detail Press Back
+          Button
+        </h3>
+        <br /><br />
+        <div class="main">
+          <label for="" class="label label-primary">Teacher Name is :</label>
+          <p class="alert alert-info" id="s1"></p>
+          <label for="" class="label label-primary">Subject Name is :</label>
+          <p class="alert alert-info" id="s2"></p>
+          <label for="" class="label label-primary">Course Name is :</label>
+          <p class="alert alert-info" id="s3"></p>
+          <label for="" class="label label-primary">Course Number is :</label>
+          <p class="alert alert-info" id="s4"></p>
+          <label for="" class="label label-primary"
+            >Why you chose this course?</label
+          >
+          <p class="alert alert-info" id="s5"></p>
+
+          <label for="" class="label label-primary"
+            >Would you recommend this course to other Student?</label
+          >
+          <p class="alert alert-info" id="s6"></p>
+
+          <label for="" class="label label-primary"
+            >Level of effort invested in course</label
+          >
+          <p class="alert alert-info" id="s7"></p>
+
+          <label for="" class="label label-primary"
+            >Level of knowledge on start of course</label
+          >
+          <p class="alert alert-info" id="s8"></p>
+
+          <label for="" class="label label-primary"
+            >Level of knowledge on End of course</label
+          >
+          <p class="alert alert-info" id="s9"></p>
+
+          <label for="" class="label label-primary"
+            >Level of Communication</label
+          >
+          <p class="alert alert-info" id="s10"></p>
+
+          <label for="" class="label label-primary"
+            >After Joining this course</label
+          >
+          <p class="alert alert-info" id="s11"></p>
+
+          <button class="btn btn-primary" type="button" onclick="Xyz()">
+            OK
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById('s1').innerHTML = localStorage.getItem('tname');
+      document.getElementById('s2').innerHTML = localStorage.getItem('sname');
+      document.getElementById('s3').innerHTML = localStorage.getItem('cname');
+      document.getElementById('s4').innerHTML = localStorage.getItem('cnumber');
+      document.getElementById('s5').innerHTML = localStorage.getItem('choose1');
+      document.getElementById('s6').innerHTML = localStorage.getItem('choose2');
+      document.getElementById('s7').innerHTML = localStorage.getItem('choose3');
+      document.getElementById('s8').innerHTML = localStorage.getItem('choose4');
+      document.getElementById('s9').innerHTML = localStorage.getItem('choose5');
+      document.getElementById('s10').innerHTML =
+        localStorage.getItem('choose6');
+      document.getElementById('s11').innerHTML =
+        localStorage.getItem('choose7');
+      function Xyz() {
+        window.location.href = 'loader1.html';
+      }
+    </script>
+  </body>
+</html>

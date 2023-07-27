@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V.D.Galiyar</title>
+    <link href="index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="sweetalert.min.js"></script>
+    <script src="feedback.js"></script>
+    <style>
+      form {
+        border: solid skyblue;
+        padding: 15px;
+        background-color: #3c79f5;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html"
+                ><img
+                  src="image/school.png"
+                  alt="logo"
+                  height="50px"
+                  style="background-color: aliceblue"
+                  width="50px"
+              /></a>
+              <button
+                class="navbar-toggler btn1"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                style="background-color: aliceblue"
+              >
+                <img
+                  src="image/apps.png"
+                  alt="menu"
+                  class="text-light"
+                  height="40px"
+                  width="40px"
+                />
+              </button>
+              <div
+                class="collapse navbar-collapse justify-content-space-between"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="index.html"
+                      ><i class="fa fa-fw fa-home"></i>Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="course.html"
+                    >
+                      <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAn0lEQVR4nO2U3Q2DMAwG88RQTADqYIS1YBNa6BiHLCG1on8mcQEpuccvsk6xbDuXSQ6gAFpgAkbAS7aH2POKf3oPodeI5adr7pFiNGJp75pbRAfVYv9G3OwhLhb5aDFcarE15xcDFxkmq1XZIr6yjc5K/InyZ/E/xC6QLA5uNeH0R4m7r+L04HG55JDU1rn2cg3W+SnF9VI0AJV1nkmHGayvrjckGRc6AAAAAElFTkSuQmCC"
+                      />
+                      Course</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="feedback.html"
+                      ><i class="fa fa-star" aria-hidden="true"></i> Feedback</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="contact.html"
+                      ><i class="fa fa-fw fa-envelope"></i> Contact</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link text-light ancor mx-md-4"
+                      href="about.html"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        x="0px"
+                        y="0px"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 50 50"
+                        style="fill: #ffffff"
+                      >
+                        <path
+                          d="M25,2C12.297,2,2,12.297,2,25s10.297,23,23,23s23-10.297,23-23S37.703,2,25,2z M25,11c1.657,0,3,1.343,3,3s-1.343,3-3,3 s-3-1.343-3-3S23.343,11,25,11z M29,38h-2h-4h-2v-2h2V23h-2v-2h2h4v2v13h2V38z"
+                        ></path>
+                      </svg>
+                      About Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div>
+      <div class="container">
+        <h1 class="mt-4 text-center alert alert-primary shadow-lg rounded">
+          Student Feedback Form
+        </h1>
+        <br /><br />
+        <div class="col-sm-12">
+          <form action="" name="feedbackfrom" class="shadow-lg rounded">
+            <div class="form-group">
+              <label for="Teacher">Teacher/Instructor</label>
+              <input
+                type="text"
+                class="form-control"
+                id="i1"
+                placeholder="Enter Full Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Subject">Subject Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="i2"
+                placeholder="Enter Subject Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Coursename">CourseName</label>
+              <input
+                type="text"
+                class="form-control"
+                id="i3"
+                placeholder="Enter Course Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Coursenumber">CourseNumber</label>
+              <input
+                type="number"
+                class="form-control"
+                id="i4"
+                placeholder="Enter Course Number"
+              />
+            </div>
+            <hr />
+            <h4 class="alert alert-warning">Why you chose this course?</h4>
+            <label for="">
+              <input
+                type="radio"
+                name="redin1"
+                value="Degree Requirements"
+              />Degree Requirements <br />
+              <input
+                type="radio"
+                name="redin1"
+                value="Personal interest"
+              />Personal interest
+            </label>
+            <h4 class="alert alert-warning">
+              Would you recommend this course to other Student?
+            </h4>
+            <!-- radio button name = redin2 -->
+            <label for="course">
+              <input type="radio" name="redin2" value="Yes" />&nbsp;Yes&nbsp;
+              <input type="radio" name="redin2" value="No" />&nbsp; No
+            </label>
+            <hr />
+            <h4 class="alert alert-warning">
+              Please rate each following statement.
+            </h4>
+            <table class="table table-dark table-responsive-sm">
+              <tr>
+                <td>Question</td>
+                <td>Very good</td>
+                <td>good</td>
+                <td>fair</td>
+                <td>poor</td>
+                <td>very poor</td>
+              </tr>
+              <tr>
+                <td>Level of effort invested in course</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin3"
+                    id="r01"
+                    value="very good"
+                  />
+                </td>
+                <td>
+                  <input type="radio" name="redin3" id="r02" value="good" />
+                </td>
+                <td>
+                  <input type="radio" name="redin3" id="r03" value="fair" />
+                </td>
+                <td>
+                  <input type="radio" name="redin3" id="r04" value="poor" />
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin3"
+                    id="r05"
+                    value="very poor"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Level of knowledge on start of course</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin4"
+                    id="r06"
+                    value="very good"
+                  />
+                </td>
+                <td>
+                  <input type="radio" name="redin4" id="r07" value="good" />
+                </td>
+                <td>
+                  <input type="radio" name="redin4" id="r08" value="fair" />
+                </td>
+                <td>
+                  <input type="radio" name="redin4" id="r09" value="poor" />
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin4"
+                    id="r10"
+                    value="very poor"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Level of knowledge on End of course</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin5"
+                    id="r11"
+                    value="very good"
+                  />
+                </td>
+                <td>
+                  <input type="radio" name="redin5" id="r12" value="good" />
+                </td>
+                <td>
+                  <input type="radio" name="redin5" id="r13" value="fair" />
+                </td>
+                <td>
+                  <input type="radio" name="redin5" id="r14" value="poor" />
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin5"
+                    id="r15"
+                    value="very poor"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Level of Communication</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin6"
+                    id="r16"
+                    value="very good"
+                  />
+                </td>
+                <td>
+                  <input type="radio" name="redin6" id="r17" value="good" />
+                </td>
+                <td>
+                  <input type="radio" name="redin6" id="r18" value="fair" />
+                </td>
+                <td>
+                  <input type="radio" name="redin6" id="r19" value="poor" />
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin6"
+                    id="r20"
+                    value="very poor"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>After Joining this course</td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin7"
+                    id="r21"
+                    value="very good"
+                  />
+                </td>
+                <td>
+                  <input type="radio" name="redin7" id="r22" value="good" />
+                </td>
+                <td>
+                  <input type="radio" name="redin7" id="r23" value="fair" />
+                </td>
+                <td>
+                  <input type="radio" name="redin7" id="r24" value="poor" />
+                </td>
+                <td>
+                  <input
+                    type="radio"
+                    name="redin7"
+                    id="r25"
+                    value="very poor"
+                  />
+                </td>
+              </tr>
+            </table>
+            <br />
+            <center>
+              <button type="button" onclick="magic()" class="btn btn-warning">
+                Submit
+              </button>
+              &nbsp;&nbsp;&nbsp;
+              <button type="reset" class="btn btn-warning">Reset</button>
+            </center>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer style="background-color: black" class="mt-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-light pt-2">
+              © 2023 Copyright:
+              <a href="https://vdgaliyaar.netlify.app/">v.d.galiyaar</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script></script>
+</html>

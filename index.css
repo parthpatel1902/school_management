@@ -1,0 +1,48 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ancor {
+  font-size: 18px;
+}
+
+header {
+  background-color: rgb(22, 27, 35);
+}
+body {
+  background-color: skyblue;
+  background-image: url('image/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 500px) {
+  .dv1 {
+    height: 260px;
+  }
+}
+
+.dv2 {
+  color: black;
+  background-color: #2dcddf;
+}
+
+.dv3 {
+  color: black;
+  background-color: #2dcddf;
+}
+@media screen and (min-width: 500px) {
+  .dv6 {
+    height: 390px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dv6 {
+    height: 260px;
+  }
+  .dv9 {
+    height: 260px;
+  }
+}
